@@ -1,0 +1,30 @@
+print("Welcome to the test adventure game!")
+print("You find yourself in the nortern canadian forest. There are paths to the left and right.")
+
+choice1 = input("Do you want to go left or right? ")
+
+if choice1 == "left":
+    print("You encounter a wild bear!")
+    choice2 = input("Do you want to fight the bear or run away? (fight/run) ")
+    
+    if choice2 == "fight":
+        print("You bravely fight the bear but it overpowers you. Game Over!")
+    elif choice2 == "run":
+        print("You manage to escape safely! You find a hidden treasure. You win!")
+    else:
+        print("Invalid choice! The bear catches you. Game Over!")
+
+elif choice1 == "right":
+    print("You come across a serene lake.")
+    choice3 = input("Do you want to swim in the lake or sit by the shore? (swim/sit) ")
+    
+    if choice3 == "swim":
+        print("You swim in the lake and discover a magical underwater city! You win!")
+    elif choice3 == "sit":
+        print("While sitting, you find a mysterious old book. You open it and it reveals secrets! You win!")
+    else:
+        print("Invalid choice! A sudden storm arises, and you're caught in it. Game Over!")
+
+else:
+    print("Invalid choice! You wander aimlessly in the forest until you get lost. Game Over!")
+
